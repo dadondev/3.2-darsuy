@@ -1,0 +1,258 @@
+body {
+  font-family: "Alata", sans-serif;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.flex {
+  display: flex;
+}
+.a__item--c {
+  align-items: center;
+}
+.a__item--fe {
+  align-items: flex-end;
+}
+
+.jc__c {
+  justify-content: center;
+}
+.jc__b {
+  justify-content: space-between;
+}
+.jc__a {
+  justify-content: space-around;
+}
+.f__direc--c {
+  flex-direction: column;
+}
+.width {
+  width: 100%;
+}
+/* global styles end */
+.header {
+  padding-top: 64px;
+  padding-bottom: 146px;
+  background-image: url("../images/bc-home.svg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}
+.logo {
+  max-width: 192px;
+}
+.nav__ul {
+  gap: 32px;
+}
+.nav__ul li a {
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+  transition: ease 2s;
+}
+.nav__ul li a {
+  display: inline-block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.nav__ul li a:after {
+  content: "";
+  transform: scaleX(0);
+  transition: ease 0.5s;
+  bottom: -10px;
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  background-color: #fff;
+}
+.nav__ul li a:hover::after {
+  height: 2px;
+  transform: scaleX(1);
+}
+/* navbar styles end */
+.hero {
+  max-width: 650px;
+  margin-top: 130px;
+  border: 2px solid #fff;
+}
+.hero__title {
+  width: 570px;
+  height: 198px;
+  margin: 40px;
+}
+.hero__title h1 {
+  color: #fff;
+  font-family: "Josefin Sans";
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+/* header hero style end */
+#lead {
+  margin-top: 80px;
+  margin-bottom: 180px;
+}
+.lead {
+  padding-top: 80px;
+}
+.lead__boxs {
+  max-height: 500px;
+  position: relative;
+}
+.lead__box:nth-child(1) {
+  max-width: 731px;
+}
+.lead__box:nth-child(2) {
+  position: absolute;
+  left: 570px;
+  max-width: 541px;
+  background: #fff;
+}
+.lead__title {
+  margin: 96px 25px 0 96px;
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.lead__p {
+  margin-left: 96px;
+  color: #000;
+  font-size: 15px;
+  line-height: 25px; /* 166.667% */
+  opacity: 0.4;
+}
+/* lead styles end */
+.creat__head {
+  margin-bottom: 80px;
+}
+.head__span {
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 48px;
+  text-transform: uppercase;
+  display: block;
+}
+.btn {
+  width: 157px;
+  height: 40px;
+  border: 1px solid #000;
+  color: #000;
+  font-family: Alata;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+}
+.creat__main {
+  flex-wrap: wrap;
+}
+.creat__card {
+  cursor: pointer;
+
+  margin-top: 30px;
+  width: 256px;
+  height: 450px;
+  background-image: url("../images/earth.png");
+}
+.creat__card:nth-child(2) {
+  background-image: url("../images/arcade.png");
+}
+.creat__card:nth-child(3) {
+  background-image: url("../images/player.png");
+}
+.creat__card:nth-child(4) {
+  background-image: url("../images/car.png");
+}
+.creat__card:nth-child(5) {
+  background-image: url("../images/track.png");
+}
+.creat__card:nth-child(6) {
+  background-image: url("../images/spark.png");
+}
+.creat__card:nth-child(7) {
+  background-image: url("../images/bot.png");
+}
+.creat__card:nth-child(8) {
+  background-image: url("../images/planet.png");
+}
+.creat__card:hover {
+  opacity: 0.8;
+}
+.creat__card:hover .card__span {
+  opacity: 1;
+  color: #000;
+}
+.card__span {
+  width: 106px;
+  position: relative;
+  left: 40px;
+  bottom: 32px;
+  color: #fff;
+  font-family: "Josefin Sans";
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+/* creat styles end */
+footer {
+  margin-top: 184px;
+  background-color: #000;
+  padding: 44px 0;
+}
+.social {
+  gap: 30px;
+}
+.social a img {
+  width: 24px;
+  height: 24px;
+}
+.social a {
+  display: inline-block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.social a:after {
+  content: "";
+  transform: scaleX(0);
+  transition: ease 0.5s;
+  bottom: -10px;
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  background-color: #fff;
+}
+.social a:hover::after {
+  height: 2px;
+  transform: scaleX(1);
+}
+.footer__main {
+  margin-top: 24px;
+}
+.about span {
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px; /* 166.667% */
+  opacity: 0.5;
+}
